@@ -8,11 +8,28 @@
 
 import UIKit
 
+func fahrenheitToCelcius(_ input: String) -> String {
+    return String((Float(input)! - Float(32)) * (5/9))
+}
+
+func celciusToFahrenheit(_ input: String) -> String {
+    return String((Float(input)! * (9/5)) + Float(32))
+}
+
+func milesToKm(_ input: String) -> String {
+    return String(Float(input)! * 1.609344)
+}
+
+func kmToMiles(_ input: String) -> String {
+    return String(Float(input)! / 1.609344)
+}
+
 struct Converter {
     var label: String
     var inputUnit: String
     var outputUnit: String
     var index: Int
+    var conversionFunction: (String) -> String = fahrenheitToCelcius
 }
 
 class ConverterViewController: UIViewController {
@@ -25,25 +42,29 @@ class ConverterViewController: UIViewController {
             label: "fahrenheit to celcius",
             inputUnit: "°F",
             outputUnit: "°C",
-            index: 0
+            index: 0,
+            conversionFunction: fahrenheitToCelcius
         ),
         Converter(
             label: "celcius to fahrenheit",
             inputUnit: "°C",
             outputUnit: "°F",
-            index: 1
+            index: 1,
+            conversionFunction: celciusToFahrenheit
         ),
         Converter(
             label: "miles to kilometers",
             inputUnit: "mi",
             outputUnit: "km",
-            index: 2
+            index: 2,
+            conversionFunction: milesToKm
         ),
         Converter(
             label: "kilometers to miles",
             inputUnit: "km",
             outputUnit: "mi",
-            index: 3
+            index: 3,
+            conversionFunction: kmToMiles
         ),
     ]
     var selectedConverter: Converter?
@@ -65,7 +86,6 @@ class ConverterViewController: UIViewController {
         } else {
             inputNumber = inputNumber + sender.currentTitle! as String
         }
-        print(inputNumber)
         updateDisplays()
     }
     
@@ -76,7 +96,6 @@ class ConverterViewController: UIViewController {
         } else {
             inputNumber = inputNumber + "."
         }
-        print(inputNumber)
         updateDisplays()
     }
     
@@ -86,12 +105,12 @@ class ConverterViewController: UIViewController {
         } else {
             inputNumber = "-" + inputNumber
         }
-        print(inputNumber)
         updateDisplays()
     }
     
     func updateDisplays() {
         inputDisplay.text = inputNumber + " " + selectedConverter!.inputUnit
+        outputDisplay.text = selectedConverter!.conversionFunction(inputNumber) + " " + selectedConverter!.outputUnit
     }
     
     @IBAction func cHit(_ sender: Any) {
@@ -101,8 +120,7 @@ class ConverterViewController: UIViewController {
     
     func updateConverter(_ index: Int) {
         selectedConverter = converters[index]
-        inputDisplay.text = selectedConverter?.inputUnit
-        outputDisplay.text = selectedConverter?.outputUnit
+        updateDisplays()
     }
 
     @IBAction func onConverterClick(_ sender: Any) {
