@@ -53,6 +53,9 @@
                                                         <state key="normal" title="C">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="cHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kK-Pl-5xs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEw-6q-4Lg">
                                                         <rect key="frame" x="138.5" y="0.0" width="137" height="116"/>
@@ -61,6 +64,9 @@
                                                         <state key="normal" title="+/-">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="plusMinusHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5f-Fc-Fm7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G0-9e-y3E">
                                                         <rect key="frame" x="276.5" y="0.0" width="137.5" height="116"/>
@@ -89,6 +95,9 @@
                                                         <state key="normal" title="7">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPC-f6-Xgg"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-tC-8Lm">
                                                         <rect key="frame" x="138.5" y="0.0" width="137" height="116"/>
@@ -97,6 +106,9 @@
                                                         <state key="normal" title="8">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAq-NK-Cfm"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLl-yV-VhN">
                                                         <rect key="frame" x="276.5" y="0.0" width="137.5" height="116"/>
@@ -105,6 +117,9 @@
                                                         <state key="normal" title="9">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cr1-qO-aLr"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -122,6 +137,9 @@
                                                         <state key="normal" title="4">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="go3-z4-iIm"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YC9-LQ-4Xn">
                                                         <rect key="frame" x="138.5" y="0.0" width="137" height="116"/>
@@ -130,6 +148,9 @@
                                                         <state key="normal" title="5">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9LE-5n-BDW"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-ZH-7H1">
                                                         <rect key="frame" x="276.5" y="0.0" width="137.5" height="116"/>
@@ -138,6 +159,9 @@
                                                         <state key="normal" title="6">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Xf-4k-Avg"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -155,6 +179,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBe-uY-tEl"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egr-yp-scs">
                                                         <rect key="frame" x="138.5" y="0.0" width="137" height="116"/>
@@ -163,6 +190,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y16-tG-d3l"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giy-JO-HFG">
                                                         <rect key="frame" x="276.5" y="0.0" width="137.5" height="116"/>
@@ -171,6 +201,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LGR-Ih-WMp"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -188,6 +221,9 @@
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gH1-6s-rfp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-UK-hqW">
                                                         <rect key="frame" x="276.5" y="0.0" width="137.5" height="116"/>
@@ -196,6 +232,9 @@
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="dotHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZq-Vr-vkm"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>

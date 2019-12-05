@@ -47,12 +47,56 @@ class ConverterViewController: UIViewController {
         ),
     ]
     var selectedConverter: Converter?
+    var inputNumber: String = "0"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
         updateConverter(0)
+        updateDisplays()
+    }
+    
+    @IBAction func numberHit(_ sender: UIButton) {
+        if (inputNumber == "0") {
+            inputNumber = sender.currentTitle! as String
+        } else if (inputNumber == "-0"){
+            inputNumber = "-" + sender.currentTitle! as String
+        } else {
+            inputNumber = inputNumber + sender.currentTitle! as String
+        }
+        print(inputNumber)
+        updateDisplays()
+    }
+    
+    @IBAction func dotHit(_ sender: Any) {
+        if (inputNumber.contains(".")) {
+            print("already decimal")
+            return
+        } else {
+            inputNumber = inputNumber + "."
+        }
+        print(inputNumber)
+        updateDisplays()
+    }
+    
+    @IBAction func plusMinusHit(_ sender: Any) {
+        if (inputNumber.contains("-")) {
+            inputNumber = String(inputNumber.split(separator: "-")[0])
+        } else {
+            inputNumber = "-" + inputNumber
+        }
+        print(inputNumber)
+        updateDisplays()
+    }
+    
+    func updateDisplays() {
+        inputDisplay.text = inputNumber + " " + selectedConverter!.inputUnit
+    }
+    
+    @IBAction func cHit(_ sender: Any) {
+        inputNumber = "0"
+        updateDisplays()
     }
     
     func updateConverter(_ index: Int) {
