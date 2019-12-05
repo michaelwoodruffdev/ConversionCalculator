@@ -63,8 +63,8 @@ class ConverterViewController: UIViewController {
 
     @IBAction func onConverterClick(_ sender: Any) {
         let alert = UIAlertController(
-            title: "Change Converter",
-            message: "Select Converter to change to",
+            title: "Choose Converter",
+            message: "",
             preferredStyle: UIAlertController.Style.actionSheet
         )
         
